@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-between items-center w-[92%] p-3 mx-auto">
+            <div class="flex items-center">
+                <img class="h-24 cursor-pointer  rounded-full " src="images/logo.png" alt="..."><span
+                    class="text-yellow-400 font-thin">Corleone_</span><span
+                    class="text-green-400 font-thin">Solutions</span>
+            </div>
+            <div
+                class="nav-links duration-500 md:static bg-white absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="hidden md:block">
+                    <div class="flex space-x-2">
+                        <a href="https://twitter.com/Jerome15486481"><img src="images/twitterpng-removebg-preview.png  "
+                                class="h-6" /></a>
+
+                        <img src="images/instagram-removebg-preview.png" class="h-6" />
+                        <img src="images/github.png" class="h-6" />
+
+
+                    </div>
+
+
+                </div>
+
+                <button onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                    </svg>
+
+
+                </button>
+
+
+
+            </div>
+        </nav>
+        <div class="hero  ">
+
+            <div class="hero-text container  justify-center flex flex-col h-screen items-center">
+                <h1 class="text-white text-3xl md:text-5xl font-extrabold"><span class="jerome">&lt; Jerome/ &gt;</span>
+                    <span class="Ankrah "> Ankrah</span> </h1>
+
+                <div class="flex items-center mt-6">
+                    <div class=" text-orange-600 flex ">
+                        <h1 class="text-sm md:text-xl  font-mono font-bold">Graphic Designer
+
+                        </h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+                        </svg>
+
+                    </div>
+                    <div class="flex items-center ml-4  text-green-400 ">
+                        <h1 class="text-sm md:text-lg  font-serif font-extrabold">Web <span
+                                class="underline">Developer</span> </h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                        </svg>
+
+
+                    </div>
+
+
+
+                </div>
+                <div>
+                    <a href="#details"> <button
+                            class="bg-blue-600 text white text-sm font-mono font-bold text-white px-2 p-1 mt-10 hover:bg-blue-500 rounded-lg">Let's
+                            Go</button></a>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </header>
+
+    <section class="section_one mt-6 mb-6 flex items-center justify-center">
+        <div class="details mt-2" id="details">
+
+            <div class="">
+                <div class="about p-5 ">
+                    <div class="flex-col flex md:flex-row items-center h-full justify-center mx-3  ">
+                        <div>
+                            <img src="images/mypic.jpg" class="rounded-full shadow-lg mr-5 h-32 md:h-" alt="">
+
+                        </div>
+                        <div class="vertical-line hidden md:block mr-5"></div>
+    
+                        <div class="flex flex-col items-center shadow-xl bg-[#eaf6f6] p-5 h-full text-black w-full md:w-[70%] ">
+                            <div class="flex flex-shrink text-2xl">
+                                <h1 class=" underline text-center text-yellow-500 font-bold  font-serif">
+                                    About me
+                                </h1>
+    
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                </svg>
+    
+                            </div>
+                            <div>
+                                <p class="my_bio   text-center  font-bold text-lg ">My name is Jerome Ankrah popularly as Corleone
+                                    based in Accra Ghana. I am currently in my third year studying computer science in the Kwame Nkrumah University
+                                    Of Science And Technology. I like to <span class="text-green-500">code </span> in html
+                                    &#129315; , tailwind ,js, php and django. You will be catch me creating  designs,  watching anime(currently watching vinland saga) and doing <span class="text-red-500">calisthenics</span> when i am
+                                    free .In addition to my technical skills, I am also a strong communicator and collaborator. I believe that clear communication and effective collaboration are essential to the success of any project, and I work hard to foster positive working relationships with my colleagues.
+                                </p>
+    
+                            </div>
+    
+    
+                        </div>
+                          
+
+
+
+
+
+                    </div>
+                 
+                </div>
+           
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="section_two  p-3">
+        <div class="flex flex-col md:flex-row">
+            <div class="services p-3 w-full md:w-[50%] bg-green-700" id="services">
+                <div class="flex flex-col items-center text-white">
+                    <div class="flex text-2xl ">
+                        <h1 class="underline">
+                            Services
+                        </h1>
+                        <div
+                            class="  animate__animated animate__jello animate__delay-2s animate__infinite	infinite">
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                            </svg>
+                        </div>
+
+
+                    </div>
+                    <div class="list  mt-4">
+                        <ul class="font-semibold space-y-4 ">
+                            <li class="flex items-center space-x-2">Flyers <img
+                                    src="images/photoshop-cc-splash-png-logo-3.png" class="h-10" /></li>
+                            <li class="flex items-center ">Logos <img src="images/illustratorlogo.png"
+                                    class="h-6 ml-2" /> </li>
+                            <li class="flex items-center ">Web dev <img
+                                    src="images/8-2-web-development-png-file.png" class="h-6 ml-2" /> </li>
+                        </ul>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="stack  w-full md:w-[50%]  shadow-2xl  flex items-center justify-center  flex-row  p-3">
+                <div>
+                    <h1 class="text-[#ff6f3c] font-sans flex font-semibold text-2xl md:text-3xl">
+                        My tech stack<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+                        </svg>
+
+                    </h1>
+                </div>
+                <div class="stack_images flex flex-col space-y-3">
+                    <img src="images/htmlcssjs.png" alt="" class="h-11 zomm" />
+                    <img src="images/tailwindcss-1633184775.jpg" class="h-11" />
+                    <img src="images/reactjs.png" class="h-11">
+                    <img src="images/Django.png " class="h-11 zomm_two ">
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <div class="swiper mySwiper">
+
+        <h1 class="text-center mb-2 font-bold font-sans text-base md:text-xl flex items-center justify-center ">My
+            Projects
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path
+                    d="M5.566 4.657A4.505 4.505 0 016.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0015.75 3h-7.5a3 3 0 00-2.684 1.657zM2.25 12a3 3 0 013-3h13.5a3 3 0 013 3v6a3 3 0 01-3 3H5.25a3 3 0 01-3-3v-6zM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 016.75 6h10.5a3 3 0 012.683 1.657A4.505 4.505 0 0018.75 7.5H5.25z" />
+            </svg>
+
+        </h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="bg-white shadow-lg rounded-lg ">
+                    <img class="w-full h-48 object-cover" src="images/project.jpg" alt="Project Image">
+                    <div class="p-4">
+                        <h3 class="text-xl font-medium mb-2">Project Title</h3>
+                        <p class="text-gray-600 mb-4">Project description goes here.</p>
+                        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded">Learn
+                            More</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-white shadow-lg rounded-lg ">
+                    <img class="w-full h-48 object-cover" src="images/project.jpg" alt="Project Image">
+                    <div class="p-4">
+                        <h3 class="text-xl font-medium mb-2">Project Title</h3>
+                        <p class="text-gray-600 mb-4">Project description goes here.</p>
+                        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded">Learn
+                            More</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="project-image.jpg" alt="Project Image">
+                    <div class="p-4">
+                        <h3 class="text-xl font-medium mb-2">Project Title</h3>
+                        <p class="text-gray-600 mb-4">Project description goes here.</p>
+                        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded">Learn
+                            More</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Add your project cards here -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto py-8 p-7 flex flex-col md:flex-row space-y-4 justify-between items-center">
+            <div class="flex items-center">
+                <img class="h-14 bg-white  cursor-pointer  rounded-full " src="images/logo.png" alt="..."><span
+                    class="text-yellow-400 font-thin ml-3">Corleone_</span><span
+                    class="text-green-400 font-thin">Solutions</span>
+            </div>
+            <ul class="flex md:flex-row flex-col md:items-center text-white md:gap-[4vw] gap-8">
+                <li>
+                    <a class="hover:text-gray-500" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">Contact</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">About</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#services">Services</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#"></a>
+                </li>
+            </ul>
+      
+            <div class="flex space-x-2 bg-white p-3">
+                <a href="https://twitter.com/Jerome15486481"><img src="images/twitterpng-removebg-preview.png  "
+                        class="h-6" /></a>
+                <a href="https://www.instagram.com/corleonetech/">  <img  src="images/instagram-removebg-preview.png" class="h-6" /></a>
+                
+              
+            <a href="https://github.com/Corleonedev"> <img src="images/github.png" class="h-6" /></a>
+
+
+            </div>
+</footer>
+
+
+
+
+
+</body>
+<script src="slide.js"></script>
+
+<!-- <script src="responsive.js"></script> -->
+
+
+</html>
+
+<script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[23%]');
+
+
+
+
+
+    }
+</script>
+<style>
+    .hero {
+        background-image: url("images/WallpaperDog-20516196.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
+
+    .Corleone {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    .nav-links {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .jerome {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 0%, rgba(0, 212, 255, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .Ankrah {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .zomm {
+        animation: zoom 5s infinite;
+
+    }
+
+    @-webkit-keyframes zoom {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.5);
+        }
+    }
+
+    @keyframes zoom {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.5);
+        }
+    }
+
+    .zomm_two {
+        animation: zoom 5s infinite;
+
+    }
+
+    @-webkit-keyframes zoom {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.5);
+        }
+    }
+
+    @keyframes zoom {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.5);
+        }
+    }
+
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+    .vertical-line {
+        border-left: 1px solid black;
+        height: 100px;
+      }
+      .my_bio{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+</style>
